@@ -33,7 +33,7 @@ To further optimize costs and scalability, we developed a Lambda-based automatio
 
 ## Outcome
 
-## The migration significantly improved scalability, reduced operational overhead, enhanced data handling, and modernized the CI/CD workflow, positioning the organization for faster development cycles and long-term cloud efficiency.
+The migration significantly improved scalability, reduced operational overhead, enhanced data handling, and modernized the CI/CD workflow, positioning the organization for faster development cycles and long-term cloud efficiency.
 
 ## Architecture Diagram
 
