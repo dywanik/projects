@@ -1,8 +1,8 @@
-# Project: DevOps Modernization for CI/CD Pipelines
+# Project: DevOps Modernization
 
 ## Summary
 
-This project focused on modernizing the infrastructure by transitioning from legacy systems to a scalable, cloud-native solution. The primary objective was to enhance the software development life cycle (SDLC) by migrating CI/CD pipelines from legacy on-premise environments (OneNeck and Rackspace) to GitHub Actions and AWS.
+This project focused on modernizing the infrastructure as well as introducing modern DevOps philosophy by transitioning from legacy systems to a scalable, cloud-native solutions and implementing robust processes. The primary objective was to enhance the software development life cycle (SDLC) by migrating CI/CD pipelines from legacy on-premise environments (OneNeck and Rackspace) to GitHub Actions and AWS.
 
 ## Key Responsibilities and Achievements
 
