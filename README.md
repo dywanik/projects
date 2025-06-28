@@ -4,12 +4,14 @@ The following projects highlight my hands-on experience in modernizing infrastru
 
 ## Delivered Projects
 
-[Introducing DevOps Culture on Client's request](/project_2_devops_modernization.md)
+[Introducing DevOps Culture on Client's Request](/project_2_devops_modernization.md)
 
-[Migration from Jenkins on bare metal to GitHub Actions on AWS](/project_1_ci_cd_migration_1.md)
+[Migration from Jenkins on Bare Metal to GitHub Actions on AWS](/project_1_ci_cd_migration_1.md)
 
 [Migration from Azure DevOps on GCP to GitHub Actions on AWS](/project_3_ci_cd_migration_2.md)
 
 [IT Resources Usage Policy](/project_4_caretaking_manual.md)
+
+[Growth and Strategy](/project_5_growth_and_strategy_reflections.md)
 
 ## Conceptual and Pending Work
