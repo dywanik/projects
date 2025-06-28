@@ -10,6 +10,6 @@ The following projects highlight my hands-on experience in modernizing infrastru
 
 [Migration from Azure DevOps on GCP to GitHub Actions on AWS](/project_3_ci_cd_migration_2.md)
 
-[IT Resources Usage Policy](/projects/project_4_caretaking_manual.md)
+[IT Resources Usage Policy](/project_4_caretaking_manual.md)
 
 ## Conceptual and Pending Work
