@@ -4,9 +4,11 @@
 
 This project focused on modernizing the infrastructure as well as introducing modern DevOps philosophy by transitioning from legacy systems to a scalable, cloud-native solutions and implementing robust processes. The primary objective was to enhance the software development life cycle (SDLC) by migrating CI/CD pipelines from legacy on-premise environments (OneNeck and Rackspace) to GitHub Actions and AWS.
 
+The client, a software organisation, has been delivering solutions for medicine-related customers. However, teams consisted of developer and qa engineers. They knew they have been missing concrete, DevOps skills as well as Infrastructure as Code knowledge.
+
 ## Key Responsibilities and Achievements
 
-- **Legacy Migration**: Participated in the phased migration from legacy Jenkins CI/CD and infrastructure hosted on OneNeck and Rackspace to a cloud-based architecture using GitHub Actions and AWS services.
+- **Legacy Migration**: Participated in the phased migration from infrastructure hosted on OneNeck and Rackspace to a cloud-based architecture using GitHub Actions and AWS services.
 - **Pipeline Optimization**: Reviewed existing CI/CD pipelines, identified quick-win improvements, and recommended sustainable enhancements to improve reliability and speed.
 - **Cross-Team Enablement**: Provided expert guidance across multiple engineering teams, helping them maximize effectiveness and adopt best practices in DevOps.
 - **Architecture Design**: Supported the design and implementation of future-state CI/CD workflows in GitHub Actions tailored for both Site and Server Technology applications.
