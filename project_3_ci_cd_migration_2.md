@@ -1,36 +1,55 @@
-# Project: Scalable CI/CD from Azure DevOps on GCP to GitHub Actions on AWS
+# Project: Migration from Azure DevOps on GCP to GitHub Actions on AWS
 
 ## Summary
 
-In this project, I led the end-to-end migration of a legacy CI/CD system from Azure DevOps on Google Cloud Platform servers to a modern, scalable infrastructure using GitHub Actions and AWS services. The project aimed to resolve challenges related mainly to lack of scalability and, hence, lack of cost optimisation solutions.
+This project involved a complete overhaul of a CI/CD system that previously relied on Azure DevOps running on Google Cloud Platform (GCP). The goal was to migrate to a more modern, scalable, and cost-effective solution using GitHub Actions and Amazon Web Services (AWS). The motivation behind the project was standardization of acquired systems and, therefore, cost optimization.
 
 ## Key Responsibilities and Achievements
 
-We executed a comprehensive migration strategy centered around AWS and GitHub Actions. The first step was provisioning infrastructure on AWS, where dedicated EC2 instances were configured as self-hosted GitHub runners to execute CI/CD workflows. These runners also automated the creation of database schemas and the population of test data, which was retrieved from services deployed in ECS.
+### Infrastructure Migration to AWS
 
-Application environments were deployed on separate EC2 instances, running containerized services via Docker. For storage, we utilized Amazon S3—one bucket for test suite logs and another for application data. The application database was managed using Amazon RDS for PostgreSQL within a VPC, ensuring high availability and scalability.
+- Designed and provisioned AWS infrastructure using **Terraform** and **Terragrunt**.
+- Deployed **EC2 instances** as self-hosted **GitHub Runners** to replace GCP-hosted build agents.
+- Migrated all CI/CD pipelines from **Jenkins** to **GitHub Actions**, aligning with GitHub-native workflows.
 
-To support automated data operations, ECS services were launched to populate and validate the application database with relevant datasets. The CI/CD pipeline was migrated from Jenkins to GitHub Actions, with new workflows designed to handle testing and data operations seamlessly. The entire infrastructure was codified using Terraform and Terragrunt, ensuring consistent, reproducible environments with built-in backup capability.
+### CI/CD Pipeline Transformation
 
-Security and observability were integral to the solution. AWS IAM was used to control access across all resources, while CloudWatch provided detailed monitoring, logging, and alerting for both infrastructure and application layers. Encryption key management was handled securely using AWS KMS.
+- Recreated Azure DevOps workflows as modular, reusable GitHub Actions.
+- Integrated test automation and data population tasks directly into the CI/CD flow.
+- Utilized EC2 and S3 to simulate production-like environments for reliable testing.
 
-To further optimize costs and scalability, we developed a Lambda-based automation function that dynamically scaled AWS resources—such as RDS instances, ECS services, and Auto Scaling Groups—based on workload demand.
+### Cloud-Native Architecture Components
 
-- **Infrastructure Migration to AWS**: Designed and implemented infrastructure using Terraform and Terragrunt. Deployed self-hosted GitHub Runners on EC2 instances and migrated CI/CD pipelines from Jenkins to GitHub Actions.
-- **CI/CD Transition**: Migrated pipelines from Jenkins to GitHub Actions using EC2-hosted runners.
-- **Cloud-Native Architecture**:
-  - EC2 for application hosting and GitHub runners
-  - ECS for environment provisioning
-  - RDS (PostgreSQL) for application data
-  - S3 buckets for log and data storage
-- **Cost Optimization**: Developed 30 serverless AWS Lambda functions (one per environment) to scale down resources dynamically, reducing costs and idle resource usage.
-- **Security and Monitoring**: Implemented AWS IAM for access control, AWS CloudWatch for monitoring and alerting, and AWS KMS for encryption.
+- **EC2**: Hosted applications and GitHub runners.
+- **ECS**: Launched services for test data generation and environment provisioning as well as providing MSSQL databases.
+- **Amazon S3**: Separated buckets for test logs and application data.
 
-- **Standardization**: Introduced schema standardization across projects and Infrastructure as Code practices.
-- **TCO Analysis**: Conducted a thorough total cost of ownership analysis, revealing substantial savings in hardware, energy, and labor, validating the shift to AWS as financially sound.
+### Cost Optimization
 
-- **Team Enablement and Lessons Learned**: Facilitated team upskilling on AWS and GitHub Actions, enforced Infrastructure as Code best practices, and applied effective S3 lifecycle policies to manage storage costs.
+- Serverless functions scaled down RDS, ECS, and EC2 resources during idle times.
+- Applied **S3 lifecycle policies** for automated log/data archival and deletion.
+
+### Standardization and Automation
+
+- Implemented **schema standardization**
+- Codified infrastructure and workflows to ensure consistent deployment and reproducibility.
+- Promoted **Infrastructure as Code (IaC)** and **GitOps** principles across the engineering teams.
+
+### Team Enablement & Knowledge Transfer
+
+- Conducted internal workshops and documentation sessions to onboard the team to GitHub Actions and AWS.
+- Established guidelines for maintaining GitHub workflows and scaling runner instances efficiently.
+- Introduced automation pipelines for tests and validations.
 
 ## Outcome
 
-The migration significantly improved scalability, reduced operational overhead, enhanced data handling, and modernized the CI/CD workflow, positioning the organization for faster development cycles and long-term cloud efficiency.
+The migration project led to:
+
+- **Improved scalability** and **faster pipeline execution**.
+- **Reduced cloud costs** through intelligent resource management, i.e., data not "leaving" AWS.
+- **Increased team agility** through streamlined workflows and modern tools.
+- A foundation for **future expansion** with reusable, cloud-native patterns.
+
+---
+
+This migration positioned the organization for long-term cloud success, with a leaner, more scalable, and DevOps-friendly CI/CD ecosystem.
