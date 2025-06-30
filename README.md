@@ -13,3 +13,5 @@ The following projects highlight my hands-on experience in modernizing infrastru
 [IT Resources Usage Policy](/project_4_caretaking_manual.md)
 
 [Growth and Strategy](/project_5_growth_and_strategy_reflections.md)
+
+[Monitoring Systems Automation and Optimization](/project_6_monitoring_automation.md)
